@@ -1,0 +1,45 @@
+body {
+	background: black;
+	color: lightgreen;
+}
+a {
+	background: lightgreen;
+	color: black;
+}
+p {
+	background: black;
+	color: lightgreen;
+}
+input {
+	background: black;
+	color: lightgreen;
+}
+
+.pretty {
+	background: black;
+	color: lightgreen;
+}
+
+table {
+	border-width: thin;
+	border-style: solid;
+	border-color: lightgreen
+	background: black;
+	color: lightgreen;
+}
+
+td {
+	border-width: thin;
+	border-style: solid;
+	border-color: lightgreen
+	background: black;
+	color: lightgreen;
+}
+
+th {
+	border-width: thin;
+	border-style: solid;
+	border-color: lightgreen
+	background: black;
+	color: lightgreen;
+}
