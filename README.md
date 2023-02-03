@@ -23,3 +23,6 @@ It's Java 1.2, so it doesn't currently compile with newer JDKs.
 
 It ran a PopServer to coordinate the game,
 and the actual game ran in the browser as an applet.
+
+![Professor Theme](pop-a-prof.png)
+![OS Theme](pop-a-prof-os.png)
