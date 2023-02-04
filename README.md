@@ -19,7 +19,13 @@ We demonstrated the game in class
 with 20+ people playing.
 It was chaos.
 
-It's Java 1.2, so it doesn't currently compile with newer JDKs.
+It was originally Java 1.2, 
+but I've made a few minor updates
+to allow it to build on newer JVMs.
+
+```
+javac *.java
+```
 
 It ran a PopServer to coordinate the game,
 and the actual game ran in the browser as an applet.
