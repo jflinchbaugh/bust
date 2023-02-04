@@ -310,9 +310,9 @@ public class PopAProf extends Applet
 			if (!running) break;	// stopped while suspended
 
 			// move dropping balls
-			Enumeration enum=dropping.elements();
-			while (enum.hasMoreElements()) {
-				Ball b=(Ball)enum.nextElement();
+			Enumeration elems=dropping.elements();
+			while (elems.hasMoreElements()) {
+				Ball b=(Ball)elems.nextElement();
 				b.x+=b.dx;
 				b.y+=b.dy;
 
@@ -320,9 +320,9 @@ public class PopAProf extends Applet
 			}
 
 			// move rising balls
-			enum=rising.elements();
-			while (enum.hasMoreElements()) {
-				Ball b=(Ball)enum.nextElement();
+			elems=rising.elements();
+			while (elems.hasMoreElements()) {
+				Ball b=(Ball)elems.nextElement();
 				b.x+=b.dx;
 				b.y+=b.dy;
 
@@ -651,20 +651,20 @@ public class PopAProf extends Applet
 		}
 
 		// draw dropping balls
-		Enumeration enum=dropping.elements();
+		Enumeration elems=dropping.elements();
 		try {
-			while (enum.hasMoreElements()) {
-				Ball b=(Ball)enum.nextElement();
+			while (elems.hasMoreElements()) {
+				Ball b=(Ball)elems.nextElement();
 				g.drawImage(ball[b.type],(int)b.x,(int)b.y,this);
 			}
 		} catch (Exception e) {
 		}
 
 		// draw rising balls
-		enum=rising.elements();
+		elems=rising.elements();
 		try {
-			while (enum.hasMoreElements()) {
-				Ball b=(Ball)enum.nextElement();
+			while (elems.hasMoreElements()) {
+				Ball b=(Ball)elems.nextElement();
 				g.drawImage(ball[b.type],(int)b.x,(int)b.y,this);
 			}
 		} catch (Exception e) {
@@ -987,9 +987,9 @@ public class PopAProf extends Applet
 	// produce the status list from the players vector
 	public synchronized void buildStatus() {
 		status.removeAll();
-		Enumeration enum=players.elements();
-		while (enum.hasMoreElements()) {
-			Player player=(Player)enum.nextElement();
+		Enumeration elems=players.elements();
+		while (elems.hasMoreElements()) {
+			Player player=(Player)elems.nextElement();
 			try {
 				status.add(player.getName()+" * "+player.getMessage());
 			} catch (Exception e) {
@@ -1004,9 +1004,9 @@ public class PopAProf extends Applet
 
 	// change message in vector of player objects
 	public synchronized void updatePlayerMessage(String p,String m) {
-		Enumeration enum=players.elements();
-		while (enum.hasMoreElements()) {
-			Player player=(Player)enum.nextElement();
+		Enumeration elems=players.elements();
+		while (elems.hasMoreElements()) {
+			Player player=(Player)elems.nextElement();
 			if (p.equals(player.getName())) {
 				player.setMessage(m);
 			} else {
