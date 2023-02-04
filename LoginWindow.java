@@ -18,7 +18,7 @@ public class LoginWindow extends Dialog
 		loginInput.setEditable(true);
 		add(BorderLayout.CENTER,loginInput);
 		pack();
-		show();
+		setVisible(true);
 	}
 
 	public void actionPerformed(ActionEvent e) {
